@@ -1,0 +1,48 @@
+.checkbox {
+    position: relative;
+    height:48px;
+    display: inline-flex;
+    margin:20px;
+
+    input[type="checkbox"] {
+        display: none;
+        &:checked {
+            + .check {
+                position: relative;
+                &:before {
+                    content: 'X';
+                    font-size: 32px;
+                    text-align: center;
+                    display: block;
+                    position: absolute;
+                    top:5px;
+                    bottom:5px;
+                    left:5px;
+                    right:5px;
+                    background:#ffa500;
+                    color:#f00;
+                }
+            }
+        }
+    }
+
+    .check {
+        display: block;
+        width:48px;
+        height:48px;
+        background:#f00;
+    }
+    .text {
+        font-family: 'Rubik', sans-serif;
+
+        display: block;
+        height:48px;
+        line-height: 48px;
+        padding-left: 10px;
+        font-size:18px;
+        font-weight: 900;
+        font-style: italic;
+        white-space: nowrap;
+        color:#ffa500;
+    }
+}

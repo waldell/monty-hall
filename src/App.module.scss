@@ -1,0 +1,110 @@
+@import 'mixins';
+
+.app {
+    
+}
+
+.shadowWrapper {
+    box-shadow: -8px 8px 50px 10px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inputWrapper {
+    label {
+        display: block;
+        color:#ffa500;
+        font-size:18px;
+        font-style: italic;
+        font-weight: 900;
+    }
+    input[type="number"],
+    input[type="text"] {
+        border:none;
+        border-bottom:1px solid #ffa500;
+        background:none;
+        font-size:96px;
+        text-align: center;
+        color:#f00;
+        font-weight: 700;
+        width:250px;
+        
+        -moz-appearance:textfield;
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+    
+        &:focus {
+            outline:none;
+        }
+    }
+}
+
+.page {
+    position: relative;
+    width:100%;
+    min-height:100vh;
+}
+
+.box1 {
+    @include box3d(#555);
+}
+.box2 {
+    @include box3d(#444);
+}
+.box3 {
+    @include box3d(#372355);
+    color:#fff;
+    h1 {
+        font-size:64px;
+    }
+
+    dl {
+        dt,dd {
+            margin:0;
+            display: block;
+        }
+        dt {
+            font-weight: 700;
+            i {
+                font-weight:300;
+            }
+        }
+        dd {
+            font-weight: 400;
+            margin-bottom: 10px;
+            
+        }
+    }
+}
+
+.buttonSubmit {
+    @include box3d(#f00);
+    color:#ffa500;
+    text-shadow: 1px 1px #222;
+
+    font-size: 96px;
+    padding:20px 200px;
+    font-family: 'Gravitas One', cursive;
+    border:none;
+
+    &:focus {
+        outline:none;
+    }
+}
+.buttonClear {
+    @include box3d(#ff69b4);
+    color:#eee;
+    text-shadow: 1px 1px #222;
+
+    font-size: 32px;
+    padding:20px 200px;
+    font-family: 'Gravitas One', cursive;
+    border:none;
+
+    &:focus {
+        outline:none;
+    }
+}

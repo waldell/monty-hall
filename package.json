@@ -2,19 +2,23 @@
   "name": "monty-hall",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:2448",
+  "engines": {
+    "node": ">=12.16.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "node-sass": "^4.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "server": "node ./server",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
