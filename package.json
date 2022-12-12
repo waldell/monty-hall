@@ -7,7 +7,7 @@
     "node": ">=12.16.0"
   },
   "devDependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "dependencies": {
     "node-sass": "^4.14.0",
